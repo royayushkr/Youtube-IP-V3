@@ -4,10 +4,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  define: {
-    "process.env.NODE_ENV": JSON.stringify("production"),
-    "process.env": "{}",
-  },
   build: {
     outDir: resolve(__dirname, "../../youtube_ip_v3/components/outlier_search_form_assets"),
     emptyOutDir: true,
